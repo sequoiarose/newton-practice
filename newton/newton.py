@@ -30,5 +30,5 @@ def optimize(x_0, func, tol=1e-3, max_iter=10000):
     while (np.abs(x_t - x_t1) < tol) & (iter<max_iter):
         x_t = x_t1
         x_t1 = update(x_t, func)
-        iter += 1s
+        iter += 1
     return x_t1
